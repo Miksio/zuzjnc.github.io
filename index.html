@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eko Porady Miesiąca</title>
+    <!-- Podłączenie Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Własne style -->
+    <style>
+        /* Resetowanie marginesów i wypełnienia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ustawienia dla całej strony */
+        html, body {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Główna zawartość strony */
+        body {
+            background-color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        /* Stylowanie sekcji Hero */
+        .hero {
+            background-color: #4caf50; /* Jednolity kolor tła */
+            color: #fff;
+        }
+        .hero h2 {
+            font-weight: bold;
+        }
+
+        /* Efekty dla kart */
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        /* Stylowanie przycisków */
+        .btn-success {
+            background-color: #4caf50;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-success:hover {
+            background-color: #388e3c;
+        }
+
+        /* Zaokrąglone obrazki */
+        .card-img-top {
+            border-radius: 5px;
+        }
+
+        /* Stylowanie stopki */
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        /* Linki w stopce */
+        footer a {
+            color: #81c784;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #c8e6c9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header class="bg-success text-white p-3 text-center">
+        <h1 class="fw-bold">Eko Porady Miesiąca</h1>
+    </header>
+
+    <!-- Sekcja Hero -->
+    <section class="hero py-5 text-center">
+        <div class="container">
+            <h2 class="display-5">Dbaj o środowisko przez cały rok</h2>
+            <p class="lead">Poznaj nasze ekologiczne porady i zmień codzienne nawyki na lepsze!</p>
+            <a href="#porady" class="btn btn-light btn-lg">Zobacz Porady</a>
+        </div>
+    </section>
+
+    <!-- Sekcja z materiałami -->
+    <section id="porady" class="py-5">
+        <div class="container">
+            <h3 class="text-center mb-4">Nasze Materiały</h3>
+            <div class="row">
+                <!-- Porada 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/obrazek1.png" class="card-img-top" alt="Zero Waste">
+                        <div class="card-body">
+                            <h5 class="card-title">Eko Minimalizm: Jak Mniej Znaczy Więcej</h5>
+                            <p class="card-text">Praktyczne porady jak ograniczyć ilość odpadów w codziennym życiu.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="ebook1.html" class="btn btn-success">Kup Teraz</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Porada 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/obrazek2.png" class="card-img-top" alt="Ogranicz Plastik">
+                        <div class="card-body">
+                            <h5 class="card-title">Ogranicz Plastik</h5>
+                            <p class="card-text">Dowiedz się, jak zmniejszyć zużycie plastiku w swojej codzienności.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="ebook2.html" class="btn btn-success">Kup Teraz</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Porada 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/obrazek3.png" class="card-img-top" alt="Eko Życie">
+                        <div class="card-body">
+                            <h5 class="card-title">Eko Życie na Co Dzień</h5>
+                            <p class="card-text">Inspiracje i pomysły na bycie bardziej eko każdego dnia.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="ebook3.html" class="btn btn-success">Kup Teraz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="text-center p-4">
+        <p>Kontakt: kontakt@eko-porady.pl | Znajdź nas na: 
+            <a href="https://www.facebook.com/zuziajnc" target="_blank">Facebook</a> | 
+            <a href="#" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
